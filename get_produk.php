@@ -1,18 +1,6 @@
 <?php
 header('Content-Type: application/json');
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "produk";
-
-// Buat koneksi
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Periksa koneksi
-if ($conn->connect_error) {
-    die(json_encode(["error" => "Koneksi gagal: " . $conn->connect_error]));
-}
+include "koneksimysql.php";
 
 // Cek apakah parameter id_produk dikirimkan
 if (isset($_GET['id_produk'])) {
