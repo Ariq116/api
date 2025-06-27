@@ -1,9 +1,16 @@
 <?php
 
 define('host', 'localhost');
-define('user', 'root');
-define('password', '');
-define('database', 'produk');
+
+// Hosting
+define('user', 'androidrafi');
+define('password', 'Rafi123');
+define('database', 'androidrafi');
+
+// Local
+// define('user', 'root');
+// define('password', '');
+// define('database', 'produk');
 
 $conn = mysqli_connect(host, user, password, database);
 if (!$conn) {
