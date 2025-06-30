@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email']) && isset($_F
         if ($stmt->execute()) {
             $response['result'] = 1;
             $response['message'] = "Foto berhasil diunggah";
-            $response['url'] = "https://anggoro.umrmaulana.my.id/api/" . $targetFile;
+            $response['url'] = "https://rafi.umrmaulana.my.id/api/" . $targetFile;
         } else {
             $response['message'] = "Gagal memperbarui database";
         }
